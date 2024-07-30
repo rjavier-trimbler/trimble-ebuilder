@@ -1,0 +1,97 @@
+{
+  "name": "ebuilder-home",
+  "$schema": "../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "ebuilder-home/src",
+  "projectType": "application",
+  "targets": {
+    "build": {
+      "executor": "@nx/webpack:webpack",
+      "outputs": ["{options.outputPath}"],
+      "defaultConfiguration": "production",
+      "options": {
+        "compiler": "babel",
+        "outputPath": "dist/ebuilder-home",
+        "index": "ebuilder-home/src/index.html",
+        "baseHref": "/",
+        "main": "ebuilder-home/src/main.ts",
+        "tsConfig": "ebuilder-home/tsconfig.app.json",
+        "assets": ["ebuilder-home/src/favicon.ico", "ebuilder-home/src/assets", {
+          "glob": "**/*",
+          "input": "ebuilder-home/src/public",
+          "output": "/"
+        }],
+        "styles": [],
+        "scripts": [],
+        "webpackConfig": "ebuilder-home/webpack.config.ts"
+      },
+      "configurations": {
+        "development": {
+          "extractLicenses": false,
+          "optimization": false,
+          "sourceMap": true,
+          "vendorChunk": true
+        },
+        "production": {
+          "fileReplacements": [
+            {
+              "replace": "ebuilder-home/src/environments/environment.ts",
+              "with": "ebuilder-home/src/environments/environment.prod.ts"
+            }
+          ],
+          "optimization": true,
+          "outputHashing": "all",
+          "sourceMap": false,
+          "namedChunks": false,
+          "extractLicenses": true,
+          "vendorChunk": false,
+          "webpackConfig": "ebuilder-home/webpack.config.prod.ts"
+        }
+      }
+    },
+    "serve": {
+      "executor": "@nx/react:module-federation-dev-server",
+      "defaultConfiguration": "development",
+      "options": {
+        "buildTarget": "ebuilder-home:build",
+        "hmr": true,
+        "port": 4201
+      },
+      "configurations": {
+        "development": {
+          "buildTarget": "ebuilder-home:build:development"
+        },
+        "production": {
+          "buildTarget": "ebuilder-home:build:production",
+          "hmr": false
+        }
+      }
+    },
+    "lint": {
+      "executor": "@nx/eslint:lint"
+    },
+    "test": {
+      "executor": "@nx/jest:jest",
+      "outputs": ["{workspaceRoot}/coverage/{projectRoot}"],
+      "options": {
+        "jestConfig": "ebuilder-home/jest.config.ts"
+      }
+    },
+    "serve-static": {
+      "executor": "@nx/web:file-server",
+      "defaultConfiguration": "production",
+      "options": {
+        "buildTarget": "ebuilder-home:build",
+        "watch": false,
+        "port": 4201
+      },
+      "configurations": {
+        "development": {
+          "buildTarget": "ebuilder-home:build:development"
+        },
+        "production": {
+          "buildTarget": "ebuilder-home:build:production"
+        }
+      }
+    }
+  }
+}
