@@ -3,6 +3,7 @@
   "$schema": "../node_modules/nx/schemas/project-schema.json",
   "sourceRoot": "ebuilder-shell/src",
   "projectType": "application",
+  "tags": ["type:host"],
   "targets": {
     "build": {
       "executor": "@nx/webpack:webpack",

@@ -76,16 +76,6 @@
         "targetName": "eslint:lint"
       }
     }
-  ],
-  "projects": {
-    "ebuilder-cost": {
-      "tags": ["TEAM-A"]
-    },
-    "ebuilder-home": {
-      "tags": ["TEAM-B"]
-    },
-    "ebuilder-setup": {
-      "tags": ["TEAM-C"]
-    }
-  }
+  ]
+
 }

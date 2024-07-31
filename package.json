@@ -2,8 +2,7 @@
   "name": "@trimble-ebuilder/source",
   "version": "0.0.0",
   "license": "MIT",
-  "scripts": {
-  },
+  "scripts": {},
   "private": true,
   "devDependencies": {
     "@angular-devkit/core": "~18.0.0",
@@ -65,8 +64,5 @@
       "ebuilder-home/src/assets",
       "ebuilder-home/public"
     ]
-  },
-  "jest":{
-    "setupFilesAfterEnv": ["./setupTests.js"]
   }
 }
