@@ -48,7 +48,8 @@
     "react-refresh": "^0.10.0",
     "ts-jest": "^29.1.0",
     "ts-node": "10.9.1",
-    "typescript": "~5.4.2"
+    "typescript": "~5.4.2",
+    "webpack-bundle-analyzer": "^4.10.2"
   },
   "dependencies": {
     "@trimble-oss/modus-react-components": "^0.32.0-react18",
@@ -57,7 +58,8 @@
     "react-is": "18.3.1",
     "react-router-dom": "6.11.2",
     "styled-components": "5.3.6",
-    "tslib": "^2.3.0"
+    "tslib": "^2.3.0",
+    "webpack": "^5.93.0"
   },
   "msw": {
     "workerDirectory": [

@@ -1,10 +1,11 @@
-import { composePlugins, withNx, ModuleFederationConfig } from '@nx/webpack';
+import { composePlugins, withNx } from '@nx/webpack';
 import { withReact } from '@nx/react';
 import { withModuleFederation } from '@nx/react/module-federation';
-
 import baseConfig from './module-federation.config';
+import webpackBuildBoundaries, { BOUNDARIES } from '@WebpackBoundaries';
 
-const config: ModuleFederationConfig = {
+
+const config = {
   ...baseConfig,
 };
 
@@ -12,5 +13,8 @@ const config: ModuleFederationConfig = {
 export default composePlugins(
   withNx(),
   withReact(),
-  withModuleFederation(config)
+  withModuleFederation(config),
+  (config)=>webpackBuildBoundaries(config)([
+    BOUNDARIES.NO_TRIMBLE_BUNDLES
+  ])
 );

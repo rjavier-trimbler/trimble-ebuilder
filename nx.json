@@ -76,11 +76,5 @@
         "targetName": "eslint:lint"
       }
     }
-  ],
-  "projects":{
-    "@trimble-oss/modus-react-components": {
-      "tags": ["t-lib:modus"]
-    }
-  }
-
+  ]
 }
