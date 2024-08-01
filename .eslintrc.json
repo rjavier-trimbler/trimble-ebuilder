@@ -14,7 +14,8 @@
               "depConstraints": [
                 {
                   "sourceTag": "type:host",
-                  "onlyDependOnLibsWithTags": ["type:app", "type:lib", "scope:shared"]
+                  "onlyDependOnLibsWithTags": ["type:app", "type:lib", "scope:shared"],
+                  "bannedExternalImports": ["*@trimble-oss*"]
                 },
                 {
                   "sourceTag": "type:app",
@@ -23,10 +24,6 @@
                 {
                   "sourceTag": "type:lib",
                   "onlyDependOnLibsWithTags": ["type:lib", "scope:shared"]
-                },
-                {
-                    "sourceTag": "type:host",
-                    "onlyDependOnLibsWithTags": ["type:app"]
                 }
               ]
             }

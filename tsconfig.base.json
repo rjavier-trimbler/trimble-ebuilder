@@ -15,12 +15,10 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@trimble-ebuilder/shared/data-access": [
-        "libs/shared/data-access/src/index.ts"
-      ],
+      "ebuilder-shared/data-access": [ "libs/shared/data-access/src/index.ts"],
       "ebuilder-cost/Module": ["ebuilder-cost/src/remote-entry.ts"],
       "ebuilder-home/Module": ["ebuilder-home/src/remote-entry.ts"],
-      "ebuilder-setup/Module": ["ebuilder-setup/src/remote-entry.ts"]
+      "ebuilder-setup/Module": ["ebuilder-setup/src/remote-entry.ts"],
     }
   },
   "exclude": ["node_modules", "tmp"]
