@@ -681,5 +681,37 @@
   },
   "15444536188696634556": {},
   "1062393982862890878": {},
-  "12846948282198054557": {}
+  "12846948282198054557": {},
+  "12769676325368494279": {},
+  "579053768757652817": {},
+  "18350536734928484027": {},
+  "17061254227173254099": {
+    "ebuilder-shell": {
+      "targets": {
+        "eslint:lint": {
+          "command": "eslint .",
+          "cache": true,
+          "options": {
+            "cwd": "ebuilder-shell"
+          },
+          "inputs": [
+            "default",
+            "^default",
+            "{workspaceRoot}/.eslintrc.json",
+            "{projectRoot}/.eslintrc.json",
+            "{workspaceRoot}/tools/eslint-rules/**/*",
+            {
+              "externalDependencies": [
+                "eslint"
+              ]
+            }
+          ],
+          "outputs": [
+            "{options.outputFile}"
+          ]
+        }
+      }
+    }
+  },
+  "13138271822497167635": {}
 }
