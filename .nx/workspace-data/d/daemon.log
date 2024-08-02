@@ -8335,3 +8335,37 @@ SyntaxError: Unterminated string in JSON at position 524288 (line 14207 column 2
 [NX Daemon Server] - 2024-08-02T06:01:59.327Z - Done responding to the client project-graph
 [NX Daemon Server] - 2024-08-02T06:01:59.327Z - Handled REQUEST_PROJECT_GRAPH. Handling time: 0. Response time: 1.
 [NX Daemon Server] - 2024-08-02T06:01:59.329Z - Established a connection. Number of open connections: 2
+[NX Daemon Server] - 2024-08-02T06:03:17.056Z - [WATCHER]: .github/CODEOWNERS was modified
+[NX Daemon Server] - 2024-08-02T06:03:17.059Z - [REQUEST]: Responding to the client. File watch changed
+[NX Daemon Server] - 2024-08-02T06:03:17.059Z - Done responding to the client File watch changed
+[NX Daemon Server] - 2024-08-02T06:03:17.059Z - Handled FILE-WATCH-CHANGED. Handling time: 0. Response time: 0.
+[NX Daemon Server] - 2024-08-02T06:03:17.059Z - [WATCHER]: Processing file changes in outputs
+[NX Daemon Server] - 2024-08-02T06:03:17.059Z - Time taken for 'changed-projects' 0.026374995708465576ms
+[NX Daemon Server] - 2024-08-02T06:03:17.161Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2024-08-02T06:03:17.161Z - [REQUEST]: .github/CODEOWNERS
+[NX Daemon Server] - 2024-08-02T06:03:17.161Z - [REQUEST]: 
+[NX Daemon Server] - 2024-08-02T06:03:17.275Z - Time taken for 'hash changed files from watcher' 1.4424580037593842ms
+[NX Daemon Server] - 2024-08-02T06:03:18.077Z - [REQUEST]: Client Request for Project Graph Received
+[NX Daemon Server] - 2024-08-02T06:03:18.077Z - [REQUEST]: Responding to the client. project-graph
+[NX Daemon Server] - 2024-08-02T06:03:18.078Z - Time taken for 'total for creating and serializing project graph' 0.22600001096725464ms
+[NX Daemon Server] - 2024-08-02T06:03:18.079Z - Done responding to the client project-graph
+[NX Daemon Server] - 2024-08-02T06:03:18.079Z - Handled REQUEST_PROJECT_GRAPH. Handling time: 0. Response time: 2.
+[NX Daemon Server] - 2024-08-02T06:03:18.088Z - [REQUEST]: Responding to the client. handleContextFileData
+[NX Daemon Server] - 2024-08-02T06:03:18.088Z - Done responding to the client handleContextFileData
+[NX Daemon Server] - 2024-08-02T06:03:18.088Z - Handled GET_CONTEXT_FILE_DATA. Handling time: 0. Response time: 0.
+[NX Daemon Server] - 2024-08-02T06:03:18.089Z - Closed a connection. Number of open connections: 1
+[NX Daemon Server] - 2024-08-02T06:03:18.143Z - Closed a connection. Number of open connections: 0
+[NX Daemon Server] - 2024-08-02T06:03:18.147Z - Established a connection. Number of open connections: 1
+[NX Daemon Server] - 2024-08-02T06:03:18.148Z - Established a connection. Number of open connections: 2
+[NX Daemon Server] - 2024-08-02T06:03:18.148Z - Closed a connection. Number of open connections: 1
+[NX Daemon Server] - 2024-08-02T06:03:18.151Z - [REQUEST]: Client Request for Project Graph Received
+[NX Daemon Server] - 2024-08-02T06:03:18.151Z - [REQUEST]: Responding to the client. project-graph
+[NX Daemon Server] - 2024-08-02T06:03:18.152Z - Time taken for 'total for creating and serializing project graph' 0.05591699481010437ms
+[NX Daemon Server] - 2024-08-02T06:03:18.152Z - Done responding to the client project-graph
+[NX Daemon Server] - 2024-08-02T06:03:18.152Z - Handled REQUEST_PROJECT_GRAPH. Handling time: 0. Response time: 1.
+[NX Daemon Server] - 2024-08-02T06:03:18.156Z - [REQUEST]: Client Request for Project Graph Received
+[NX Daemon Server] - 2024-08-02T06:03:18.156Z - [REQUEST]: Responding to the client. project-graph
+[NX Daemon Server] - 2024-08-02T06:03:18.157Z - Time taken for 'total for creating and serializing project graph' 0.05095800757408142ms
+[NX Daemon Server] - 2024-08-02T06:03:18.157Z - Done responding to the client project-graph
+[NX Daemon Server] - 2024-08-02T06:03:18.157Z - Handled REQUEST_PROJECT_GRAPH. Handling time: 0. Response time: 1.
+[NX Daemon Server] - 2024-08-02T06:03:18.159Z - Established a connection. Number of open connections: 2
