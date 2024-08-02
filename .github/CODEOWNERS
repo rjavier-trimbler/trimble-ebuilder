@@ -2,13 +2,13 @@
 /ebuilder-shell/  @shell-team-founder
 
 # Owners of the cost application
-/ebuilder-cost/   @ebuilder-cost-team @team-navigators
+/ebuilder-cost/   @ebuilder-cost-team @e-buildernoc/navigators
 
 # Owners of the landing page application
-/ebuilder-home/   @ebuilder-home-team @team-navigators
+/ebuilder-home/   @ebuilder-home-team @e-buildernoc/angry-nerds
 
 # Owners of the setup application
-/ebuilder-setup/  @ebuilder-setup-team @team-navigators
+/ebuilder-setup/  @ebuilder-setup-team @e-buildernoc/navigators
 
 # Owners of the shared libraries
 /libs/shared/data-access   @shared-libs-owner
