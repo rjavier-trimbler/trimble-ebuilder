@@ -1,6 +1,5 @@
 //----Service worker ----//
 export * from './mocks/browser';
-export * from './mocks/server';
 
 // ---Service worker: handlers ----//
 export * from './mocks/auth';
@@ -11,8 +10,6 @@ export * from './mocks/processes';
 export * from './paths/authUrls'
 export * from './paths/processUrls'
 export * from './paths/setupUrls'
-
-
 
 
 
