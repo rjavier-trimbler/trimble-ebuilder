@@ -1,16 +1,8 @@
 import { render } from '@testing-library/react';
+
 import App from './app';
 
-import {  server, AuthLogin } from '@trimble-ebuilder/shared/data-access';
-
 describe('App', () => {
-  jest.mock('./app.service')
-
-  it('call api', () => {
-    server.use(
-      AuthLogin
-    )
-  });
   it('should render successfully', () => {
     const { baseElement } = render(<App />);
     expect(baseElement).toBeTruthy();
